@@ -1,15 +1,20 @@
 /* eslint-disable */
 import { useState } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
+import { BiCameraMovie } from 'react-icons/bi';
+import { FaBoxOpen, FaTrain } from 'react-icons/fa';
+import { GiOpenTreasureChest } from 'react-icons/gi';
+
 import Header from '../components/Header';
 
 export default function Root() {
   const [home,setHome] = useState(true);
-  
+
   return (
     <>
-    { home ? <div id="main-menu" onClick={() => setHome(false)}>
-        <NavLink
+    { home ? <div id="main-menu" className={home ? 'show' : 'hide'} onClick={() => setHome(false)}>
+        <div className='logo-container'>
+          <NavLink
                 to="/"
                 className={({ isActive, isPending }) => (isActive
                   ? 'active'
@@ -19,6 +24,7 @@ export default function Root() {
               >
           <Header />
         </NavLink>
+        </div>
         <nav id='menu-items'>
           <ul>
             <li>
@@ -30,8 +36,7 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               >
-                Top 250
-
+              <BiCameraMovie size={57} /> Top 250
               </NavLink>
             </li>
             <li>
@@ -42,9 +47,8 @@ export default function Root() {
                   : isPending
                     ? 'pending'
                     : '')}
-              >
-                Box Office
-
+              > 
+              <FaBoxOpen size={57} /> Box Office 
               </NavLink>
             </li>
             <li>
@@ -56,8 +60,7 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               >
-                Box Office All Times 
-
+                <GiOpenTreasureChest size={57} /> Box Office All Times
               </NavLink>
             </li>
             <li>
@@ -69,29 +72,27 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               >
-                Coming Soon 
-
+                
+                <FaTrain size={57} /> Coming Soon
               </NavLink>
             </li>
           </ul>
         </nav>
-      </div> : <NavLink
-                to="/"
-                className={({ isActive, isPending }) => (isActive
-                  ? 'active'
-                  : isPending
-                    ? 'pending'
-                    : '')}
-                    onClick={() => setHome(true)}
-              >
-                &lt;
-
-              </NavLink>}
-      
-      <div id="detail" className= {navigation.state === "loading" ? "loading" : ""}>
-        <Outlet />  
-       
-      </div>
+      </div> 
+      : <>
+        <div className='menu-detail' onClick={() => setHome(true)}>
+          <NavLink
+            to="/"
+          >
+            &lt;
+          </NavLink>
+          </div>
+          
+          <div id="detail" style={{backgroundColor: '#4369b2'}} className={navigation.state === "loading" ? "loading" : ""}>
+          
+            <Outlet />
+          </div></>      
+              }
     </>
   );
 }

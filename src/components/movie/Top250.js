@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMovies } from '../../features/movie/movieSlice';
+import Search from '../Search';
 
 function Top250() {
   const dispatch = useDispatch();
@@ -22,24 +23,7 @@ function Top250() {
 
   return (
     <>
-      { movies.map((movie) => (
-        <>
-          <div className="card">
-            <p key={movie.description}>{movie.description}</p>
-            {/* <div>
-                <img src={movie.image} alt={movie.fullTitles} />
-              </div>
-              <div>
-                <h3 className="title">{movie.title}</h3>
-                <h4>{movie.rank}</h4>
-                <ul>
-                  <li>{movie.year}</li>
-                  <li>{movie.imDbRating}</li>
-                </ul>
-              </div> */}
-          </div>
-        </>
-      ))}
+      <Search movies={movies} />
     </>
   );
 }
