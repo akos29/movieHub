@@ -9,15 +9,18 @@ function BoxOffice() {
   const boxOfficeMovies = useSelector((state) => state.boxOffice.boxOffice);
   const status = useSelector((state) => state.boxOffice.status);
   const [q, setQ] = useState('');
+  const [limit, setLimit] = useState(5);
 
   const navigation = useNavigation();
   const submit = useSubmit();
   const searching = navigation.location && new URLSearchParams(navigation.location.search).has('q');
-  const [searchMovies, setSearchMovies] = useState(boxOfficeMovies);
+  const [searchMovies, setSearchMovies] = useState(boxOfficeMovies.slice(0, limit));
 
   useEffect(() => {
     if (boxOfficeMovies.length < 1 && status === 'idle') {
       dispatch(getBoxOffice());
+      setSearchMovies(boxOfficeMovies.slice(0, limit));
+      setLimit(5);
     }
   }, [status, dispatch]);
 

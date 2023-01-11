@@ -464,7 +464,7 @@ export const getMovies = createAsyncThunk(
   'movies/fetchMovies',
   async () => {
     // const response = await imdbAPI.get('/rockets');
-    const response = await imdbAPI.get('Top250Movies/k_4a3l84o7');
+    const response = await imdbAPI.get(`Top250Movies/${process.env.REACT_APP_API_KEY}`);
     console.log(response.data.items);
     return response.data.items;
   },

@@ -12,7 +12,7 @@ export const getBoxOfficeAllTime = createAsyncThunk(
   'boxOfficeAllTime/fetchBoxOfficeAllTime',
   async () => {
     // const response = await imdbAPI.get('/rockets');
-    const response = await imdbAPI.get('BoxOfficeAllTime/k_4a3l84o7');
+    const response = await imdbAPI.get(`BoxOfficeAllTime/${process.env.REACT_APP_API_KEY}`);
     console.log(response.data.items);
     return response.data.items;
   },

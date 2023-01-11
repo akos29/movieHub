@@ -6,9 +6,10 @@ import Search from '../Search';
 function Top250() {
   const dispatch = useDispatch();
   const movies = useSelector((state) => state.movies.movies);
+  const status = useSelector((state) => state.movies.status);
 
   useEffect(() => {
-    if (movies.length < 1) {
+    if (movies.length < 1 && status === 'idle') {
       dispatch(getMovies());
     }
   }, [movies, dispatch]);

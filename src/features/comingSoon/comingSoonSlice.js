@@ -12,7 +12,7 @@ export const getComingSoon = createAsyncThunk(
   'comingSoon/fetchComingSoon',
   async () => {
     // const response = await imdbAPI.get('/rockets');
-    const response = await imdbAPI.get('ComingSoon/k_4a3l84o7');
+    const response = await imdbAPI.get(`ComingSoon/${process.env.REACT_APP_API_KEY}`);
     console.log(response.data.items);
     return response.data.items;
   },

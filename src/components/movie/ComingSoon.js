@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Form, useNavigation, useSubmit } from 'react-router-dom';
+import {
+  Form, useLoaderData, useNavigation, useSubmit,
+} from 'react-router-dom';
 import { getMovie } from '../Search';
 import { getComingSoon } from '../../features/comingSoon/comingSoonSlice';
 
 function ComingSoon() {
+  const qr = useLoaderData();
   const dispatch = useDispatch();
   const comingSoonMovies = useSelector((state) => state.comingSoon.comingSoon);
   const status = useSelector((state) => state.comingSoon.status);
-  const [q, setQ] = useState('');
+  const [q, setQ] = useState(qr);
   const [limit, setLimit] = useState(5);
 
   const navigation = useNavigation();
@@ -18,7 +21,7 @@ function ComingSoon() {
   console.log(searchMovies, 'Aha');
 
   useEffect(() => {
-    if (comingSoonMovies.length < 1 || status === 'idle') {
+    if (comingSoonMovies.length < 1 && status === 'idle') {
       dispatch(getComingSoon());
     }
   }, [comingSoonMovies, dispatch]);
