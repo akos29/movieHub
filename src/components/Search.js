@@ -5,7 +5,7 @@ import { Form, useNavigation, useSubmit } from 'react-router-dom';
 import sortBy from 'sort-by';
 import { matchSorter } from 'match-sorter';
 
-function getMovie(query, movies) {
+export function getMovie(query, movies) {
   if (!movies) {
     movies = [];
   }
@@ -17,7 +17,7 @@ function getMovie(query, movies) {
 
 function Search({ movies }) {
   const [q, setQ] = useState('');
-  // const movies = useSelector((state) => state.movies.movies)
+  const [limit, setLimit] = useState(5);
   const navigation = useNavigation();
   const submit = useSubmit();
   
@@ -56,6 +56,14 @@ function Search({ movies }) {
             aria-live="polite"
           />
         </Form>
+        <input
+          type="number"
+          value={limit}
+          onChange={(e) => {
+            setLimit(e.target.value);
+            setSearchMovies(movies.slice(0, limit));
+          }}
+        />
       </div>
       <div id="detail" className={navigation.state === "loading" ? "loading" : ""}>
       { searchMovies.length>0 ?
