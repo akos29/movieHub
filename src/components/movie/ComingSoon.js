@@ -18,7 +18,6 @@ function ComingSoon() {
   const submit = useSubmit();
   const searching = navigation.location && new URLSearchParams(navigation.location.search).has('q');
   const [searchMovies, setSearchMovies] = useState(comingSoonMovies.slice(0, limit));
-  console.log(searchMovies, 'Aha');
 
   useEffect(() => {
     if (comingSoonMovies.length < 1 && status === 'idle') {
@@ -50,7 +49,7 @@ function ComingSoon() {
           <div
             id="search-spinner"
             aria-hidden
-            hidden={searching}
+            hidden={!searching}
           />
           <div
             className="sr-only"
@@ -75,23 +74,25 @@ function ComingSoon() {
                   <div className="image-container">
                     <img src={movie.image} alt={movie.title} />
                   </div>
-                  <div className="box-detail">
-                    <h2>{movie.title}</h2>
-                    <h4>
-                      Release Date:
-                      {movie.releaseState}
-                    </h4>
-                    <ul>
-                      <li>
-                        Stars:
-                        {movie.stars}
-                      </li>
-                      <li>
-                        Director
-                        {movie.director}
-                      </li>
-                    </ul>
-                  </div>
+                  <ul className="box-detail">
+                    <li>
+                      <h2>{movie.title}</h2>
+                    </li>
+                    <li>
+                      <h4>
+                        Release Date:
+                        <span>{movie.releaseState}</span>
+                      </h4>
+                    </li>
+                    <li>
+                      Stars:
+                      <span>{movie.stars}</span>
+                    </li>
+                    <li>
+                      Director:
+                      <span>{movie.director}</span>
+                    </li>
+                  </ul>
                 </div>
 
               </>

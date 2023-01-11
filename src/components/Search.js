@@ -35,7 +35,7 @@ export function getMovie(query, movies) {
 
 function Search({ movies }) {
   const qr = useLoaderData()
-  const [q, setQ] = useState(qr);
+  const [q, setQ] = useState('');
   const [limit, setLimit] = useState(5);
   const navigation = useNavigation();
   const submit = useSubmit();

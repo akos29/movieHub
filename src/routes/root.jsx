@@ -4,6 +4,7 @@ import {  Outlet, NavLink } from 'react-router-dom';
 import { BiCameraMovie } from 'react-icons/bi';
 import { FaBoxOpen, FaTrain } from 'react-icons/fa';
 import { GiOpenTreasureChest } from 'react-icons/gi';
+import { IoIosArrowBack } from 'react-icons/io'
 import Footer from '../components/Footer';
 
 export default function Root() {
@@ -15,18 +16,18 @@ export default function Root() {
     { home ? <div id="main-menu" className={home ? 'show' : 'hide'} onClick={() => setHome(false)}>
         <div className='logo-container' id="logo">
           <NavLink
-                to="/"
-                className={({ isActive, isPending }) => (isActive
-                  ? 'active'
-                  : isPending
-                    ? 'pending'
-                    : '')}
-              >
-        </NavLink>
+                  to="/"
+                  className={({ isActive, isPending }) => (isActive
+                    ? 'active'
+                    : isPending
+                      ? 'pending'
+                      : '')}
+                >
+          </NavLink>
         </div>
         <nav id='menu-items'>
           <ul>
-            <div className='row'><li className='col-1'>
+            <li className='col-1'>
               <NavLink
                 to="/top250"
                 className={({ isActive, isPending }) => (isActive
@@ -35,7 +36,7 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               >
-              <BiCameraMovie size={57} /> <p>Top 250</p>
+              <BiCameraMovie size={95} /> <h4>Top 250</h4>
               </NavLink>
             </li>
             <li className='col-2'>
@@ -47,10 +48,10 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               > 
-              <FaBoxOpen size={57} /> <p>Box Office </p>
+              <FaBoxOpen size={95} /> <h4>Box Office </h4>
               </NavLink>
-            </li></div>
-            <div className='row'> <li className='col-1'>
+            </li>
+            <li className='col-1'>
               <NavLink
                 to="/alltimes"
                 className={({ isActive, isPending }) => (isActive
@@ -59,7 +60,7 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               >
-                <GiOpenTreasureChest size={57} /> <p>Box Office All Times</p>
+                <GiOpenTreasureChest size={95} /> <h4>All Times</h4>
               </NavLink>
             </li>
             <li className='col-2'>
@@ -72,11 +73,9 @@ export default function Root() {
                     : '')}
               >
                 
-                <FaTrain size={57} /> <p>Coming Soon</p>
+                <FaTrain size={95} /> <h4>Coming Soon</h4>
               </NavLink>
-            </li></div>
-            
-           
+            </li>           
           </ul>
         </nav>
       </div> 
@@ -85,11 +84,12 @@ export default function Root() {
           <NavLink
             to="/"
           >
-            &lt;
+            <IoIosArrowBack />
+            <></>
           </NavLink>
           </div>
           
-          <div id="detail" style={{backgroundColor: '#4369b2'}} className={navigation.state === "loading" ? "loading" : ""}>
+          <div id="detail" style={{backgroundColor: '#000'}} className={navigation.state === "loading" ? "loading" : ""}>
 
             {/* <Search movies={movies} /> */}
             <Outlet />
