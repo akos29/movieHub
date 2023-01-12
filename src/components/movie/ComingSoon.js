@@ -12,7 +12,7 @@ function ComingSoon() {
   const comingSoonMovies = useSelector((state) => state.comingSoon.comingSoon);
   const status = useSelector((state) => state.comingSoon.status);
   const [q, setQ] = useState(qr);
-  const [limit, setLimit] = useState(5);
+  const [limit, setLimit] = useState(6);
 
   const navigation = useNavigation();
   const submit = useSubmit();
@@ -67,7 +67,7 @@ function ComingSoon() {
           }}
         />
       </div>
-      <div id="detail" className={navigation.state === 'loading' ? 'loading' : ''}>
+      <div id="search-detail" className={navigation.state === 'loading' ? 'loading' : ''}>
         {
           status !== 'failed'
             ? searchMovies.map((movie) => (

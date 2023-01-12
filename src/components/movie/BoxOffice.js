@@ -66,7 +66,7 @@ function BoxOffice() {
           }}
         />
       </div>
-      <div id="detail" className={navigation.state === 'loading' ? 'loading' : ''}>
+      <div id="search-detail" className={navigation.state === 'loading' ? 'loading' : ''}>
         {searchMovies.map((movie) => (
           <>
             <div className="box-card" key={movie.id}>
@@ -74,8 +74,8 @@ function BoxOffice() {
                 <img src={movie.image} alt={movie.title} />
               </div>
               <div className="box-detail">
-                <h2>{movie.title}</h2>
                 <ul>
+                  <li><h2>{movie.title}</h2></li>
                   <li>
                     Weekend total
                     {movie.weekend}

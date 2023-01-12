@@ -36,7 +36,7 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               >
-              <BiCameraMovie size={95} /> <h4>Top 250</h4>
+              <BiCameraMovie size={65} className='icons' /> <h4>Top 250</h4>
               </NavLink>
             </li>
             <li className='col-2'>
@@ -48,7 +48,7 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               > 
-              <FaBoxOpen size={95} /> <h4>Box Office </h4>
+              <FaBoxOpen size={65} className='icons' /> <h4>Box Office </h4>
               </NavLink>
             </li>
             <li className='col-1'>
@@ -60,7 +60,7 @@ export default function Root() {
                     ? 'pending'
                     : '')}
               >
-                <GiOpenTreasureChest size={95} /> <h4>All Times</h4>
+                <GiOpenTreasureChest size={65} className='icons' /> <h4>All Times</h4>
               </NavLink>
             </li>
             <li className='col-2'>
@@ -73,29 +73,27 @@ export default function Root() {
                     : '')}
               >
                 
-                <FaTrain size={95} /> <h4>Coming Soon</h4>
+                <FaTrain size={65} className='icons' /> <h4>Coming Soon</h4>
               </NavLink>
             </li>           
           </ul>
         </nav>
       </div> 
       : <>
-        <div className='menu-detail' onClick={() => setHome(true)}>
-          <NavLink
-            to="/"
-          >
-            <IoIosArrowBack />
-            <></>
-          </NavLink>
+          <div className='menu-detail' onClick={() => setHome(true)}>
+            <NavLink to="/">
+              <IoIosArrowBack />
+            </NavLink>
           </div>
-          
-          <div id="detail" style={{backgroundColor: '#000'}} className={navigation.state === "loading" ? "loading" : ""}>
+
+        </>  }
+        
+        <div id="detail" style={{ backgroundColor: '#000' }} className={navigation.state === "loading" ? "loading" : ""}>
 
             {/* <Search movies={movies} /> */}
             <Outlet />
             <Footer />
-          </div></>      
-              }
+          </div>
     </>
   );
 }

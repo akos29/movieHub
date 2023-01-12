@@ -9,7 +9,7 @@ function BoxOfficeAllTimes() {
   const boxOfficeAllTimeMovies = useSelector((state) => state.allTime.boxOfficeAllTime);
   const status = useSelector((state) => state.comingSoon.status);
   const [q, setQ] = useState('');
-  const [limit, setLimit] = useState(5);
+  const [limit, setLimit] = useState(6);
 
   const navigation = useNavigation();
   const submit = useSubmit();
@@ -64,29 +64,47 @@ function BoxOfficeAllTimes() {
           }}
         />
       </div>
-      <div id="detail" className={navigation.state === 'loading' ? 'loading' : ''}>
+      <div id="search-detail" className={navigation.state === 'loading' ? 'loading' : ''}>
         {
           status !== 'failed'
             ? searchMovies.map((movie) => (
               <>
-                <table className="allTime-card" key={movie.id}>
-                  <thead className="col-title">
-                    <th>Rank</th>
-                    <th>Title</th>
-                    <th>Life Time Worth</th>
-                    <th>Domestic (%)</th>
-                    <th>Foreign (%)</th>
-                    <th>Year</th>
-                  </thead>
-                  <tbody className="col-result">
-                    <tr>{movie.rank}</tr>
-                    <tr>{movie.title}</tr>
-                    <tr>{movie.worldwideLifetimeGross}</tr>
-                    <tr>{movie.domestic}</tr>
-                    <tr>{movie.foreign}</tr>
-                    <tr>{movie.year}</tr>
-                  </tbody>
-                </table>
+                <div className="allTime-card" key={movie.id}>
+                  <table>
+                    <tbody className="col-result">
+                      <tr>
+                        <td>Rank</td>
+                        {' '}
+                        <td>{movie.rank}</td>
+                      </tr>
+                      <tr>
+                        <td>Title</td>
+                        {' '}
+                        <td>{movie.title}</td>
+                      </tr>
+                      <tr>
+                        <td>Life Time Worth</td>
+                        {' '}
+                        <td>{movie.worldwideLifetimeGross}</td>
+                      </tr>
+                      <tr>
+                        <td>Domestic (%)</td>
+                        {' '}
+                        <td>{movie.domestic}</td>
+                      </tr>
+                      <tr>
+                        <td>Foreign (%)</td>
+                        {' '}
+                        <td>{movie.foreign}</td>
+                      </tr>
+                      <tr>
+                        <td>Year</td>
+                        {' '}
+                        <td>{movie.year}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </>
             ))
             : <>There is something wrong, please try again</>
