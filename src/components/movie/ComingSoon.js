@@ -72,11 +72,11 @@ function ComingSoon() {
           status !== 'failed'
             ? searchMovies.map((movie) => (
               <>
-                <div className="coming-card" key={movie.id}>
+                <div className="card" key={movie.id}>
                   <div className="image-container">
                     <img src={movie.image} alt={movie.title} />
                   </div>
-                  <ul className="box-detail">
+                  <ul className="card-detail">
                     <li>
                       <h2>{movie.title}</h2>
                     </li>

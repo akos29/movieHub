@@ -69,9 +69,9 @@ function BoxOfficeAllTimes() {
           status !== 'failed'
             ? searchMovies.map((movie) => (
               <>
-                <div className="allTime-card" key={movie.id}>
-                  <table>
-                    <tbody className="col-result">
+                <div className="card" key={movie.id}>
+                  <table className="card-detail">
+                    <tbody className="card-detail">
                       <tr>
                         <td>Rank</td>
                         {' '}

@@ -9,7 +9,7 @@ function BoxOffice() {
   const boxOfficeMovies = useSelector((state) => state.boxOffice.boxOffice);
   const status = useSelector((state) => state.boxOffice.status);
   const [q, setQ] = useState('');
-  const [limit, setLimit] = useState(5);
+  const [limit, setLimit] = useState(6);
 
   const navigation = useNavigation();
   const submit = useSubmit();
@@ -20,7 +20,7 @@ function BoxOffice() {
     if (boxOfficeMovies.length < 1 && status === 'idle') {
       dispatch(getBoxOffice());
       setSearchMovies(boxOfficeMovies.slice(0, limit));
-      setLimit(5);
+      setLimit(6);
     }
   }, [status, dispatch]);
 
@@ -69,13 +69,13 @@ function BoxOffice() {
       <div id="search-detail" className={navigation.state === 'loading' ? 'loading' : ''}>
         {searchMovies.map((movie) => (
           <>
-            <div className="box-card" key={movie.id}>
+            <div className="card" key={movie.id}>
               <div className="image-container">
                 <img src={movie.image} alt={movie.title} />
               </div>
-              <div className="box-detail">
+              <div className="card-detail">
                 <ul>
-                  <li><h2>{movie.title}</h2></li>
+                  <li><h3>{movie.title}</h3></li>
                   <li>
                     Weekend total
                     {movie.weekend}

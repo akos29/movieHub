@@ -143,9 +143,9 @@ function Search({ movies }) {
             </h1>
           )}
         <ul className="pagination">
-          <li><IoIosArrowBack /></li>
+          <li onClick={() => setSearchMovies(movies.slice(0, 6))}><IoIosArrowBack /></li>
           {pages.length > 0 ? pages.map((index, value) => <li key={index} onClick={() => setSearchMovies(movies.slice(index, (index + 6)))}>{value}</li>) : null }
-          <li><IoIosArrowForward /></li>
+          <li onClick={() => setSearchMovies(movies.slice((movies.length - 7), (movies.length - 1)))}><IoIosArrowForward /></li>
         </ul>
       </div>
 
