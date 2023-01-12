@@ -58,6 +58,8 @@ function ComingSoon() {
         </Form>
         <input
           type="number"
+          min={1}
+          max={comingSoonMovies.length}
           value={limit}
           onChange={(e) => {
             setLimit(e.target.value);
@@ -86,11 +88,11 @@ function ComingSoon() {
                     </li>
                     <li>
                       Stars:
-                      <span>{movie.stars}</span>
+                      <span>{movie.stars ? movie.stars : ' Unknown'}</span>
                     </li>
                     <li>
                       Director:
-                      <span>{movie.director}</span>
+                      <span>{movie.director ? movie.director : ' Unknown'}</span>
                     </li>
                   </ul>
                 </div>

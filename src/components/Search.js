@@ -81,6 +81,8 @@ function Search({ movies }) {
         </Form>
         <input
           type="number"
+          min={1}
+          max={movies.length}
           value={limit}
           onChange={(e) => {
             setLimit(e.target.value);

@@ -55,6 +55,16 @@ function BoxOffice() {
             aria-live="polite"
           />
         </Form>
+        <input
+          type="number"
+          min={1}
+          max={boxOfficeMovies.length}
+          value={limit}
+          onChange={(e) => {
+            setLimit(e.target.value);
+            setSearchMovies(boxOfficeMovies.slice(0, limit));
+          }}
+        />
       </div>
       <div id="detail" className={navigation.state === 'loading' ? 'loading' : ''}>
         {searchMovies.map((movie) => (

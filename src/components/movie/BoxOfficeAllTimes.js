@@ -55,6 +55,8 @@ function BoxOfficeAllTimes() {
         </Form>
         <input
           type="number"
+          min={1}
+          max={boxOfficeAllTimeMovies.length}
           value={limit}
           onChange={(e) => {
             setLimit(e.target.value);
@@ -67,24 +69,24 @@ function BoxOfficeAllTimes() {
           status !== 'failed'
             ? searchMovies.map((movie) => (
               <>
-                <div className="allTime-card" key={movie.id}>
-                  <ul className="col-4">
-                    <li>Rank</li>
-                    <li>Title</li>
-                    <li>Life Time Worth</li>
-                    <li>Domestic (%)</li>
-                    <li>Foreign (%)</li>
-                    <li>Year</li>
-                  </ul>
-                  <ul className="clo-4">
-                    <li>{movie.rank}</li>
-                    <li>{movie.title}</li>
-                    <li>{movie.worldwideLifetimeGross}</li>
-                    <li>{movie.domestic}</li>
-                    <li>{movie.foreign}</li>
-                    <li>{movie.year}</li>
-                  </ul>
-                </div>
+                <table className="allTime-card" key={movie.id}>
+                  <thead className="col-title">
+                    <th>Rank</th>
+                    <th>Title</th>
+                    <th>Life Time Worth</th>
+                    <th>Domestic (%)</th>
+                    <th>Foreign (%)</th>
+                    <th>Year</th>
+                  </thead>
+                  <tbody className="col-result">
+                    <tr>{movie.rank}</tr>
+                    <tr>{movie.title}</tr>
+                    <tr>{movie.worldwideLifetimeGross}</tr>
+                    <tr>{movie.domestic}</tr>
+                    <tr>{movie.foreign}</tr>
+                    <tr>{movie.year}</tr>
+                  </tbody>
+                </table>
               </>
             ))
             : <>There is something wrong, please try again</>
