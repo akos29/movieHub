@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 import {
@@ -143,9 +142,9 @@ function Search({ movies }) {
             </h1>
           )}
         <ul className="pagination">
-          <li onClick={() => setSearchMovies(movies.slice(0, 6))}><IoIosArrowBack /></li>
-          {pages.length > 0 ? pages.map((index, value) => <li key={index} onClick={() => setSearchMovies(movies.slice(index, (index + 6)))}>{value}</li>) : null }
-          <li onClick={() => setSearchMovies(movies.slice((movies.length - 7), (movies.length - 1)))}><IoIosArrowForward /></li>
+          <li onClick={() => setSearchMovies(movies.slice(0, 6))} onKeyDown={() => setSearchMovies(movies.slice(0, 6))}><IoIosArrowBack /></li>
+          {pages.length > 0 ? pages.map((index, value) => <li key={index} onClick={() => setSearchMovies(movies.slice(index, (index + 6)))} onKeyDown={() => setSearchMovies(movies.slice(index, (index + 6)))}>{value}</li>) : null }
+          <li onClick={() => setSearchMovies(movies.slice((movies.length - 7), (movies.length - 1)))} onKeyDown={() => setSearchMovies(movies.slice((movies.length - 7), (movies.length - 1)))}><IoIosArrowForward /></li>
         </ul>
       </div>
 
