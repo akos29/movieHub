@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { useState } from 'react';
-import {  Outlet, NavLink } from 'react-router-dom';
+import {  Outlet, NavLink, useNavigation, useLoaderData } from 'react-router-dom';
 import { BiCameraMovie } from 'react-icons/bi';
 import { FaBoxOpen, FaTrain } from 'react-icons/fa';
 import { GiOpenTreasureChest } from 'react-icons/gi';
@@ -88,7 +88,7 @@ export default function Root() {
 
         </>  }
         
-        <div id="detail" style={{ backgroundColor: '#000' }} className={navigation.state === "loading" ? "loading" : ""}>
+        <div id="detail" style={{ backgroundColor: '#000' }} >
 
             {/* <Search movies={movies} /> */}
             <Outlet />

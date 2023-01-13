@@ -60,9 +60,9 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Space Travelers' Hub] <a name="about-project"></a>
+# 📖 [Flip Movies: React-Redux Capstone] <a name="about-project"></a>
 
-> Web app that allows user to book rockets and join selected space missions.
+> Web app that allows user to have handful of information about all movies statistical information. To easily access the statistics of movies ranked by critic, by user and boxoffice and can also followup the coming soon movies
 
 **[Space Travelers' Hub]** is web application designed for a company that provides commercial and scientific space travel services which fetches live data from SpaceX API.
 

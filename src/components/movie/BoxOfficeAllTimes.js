@@ -9,7 +9,7 @@ function BoxOfficeAllTimes() {
   const boxOfficeAllTimeMovies = useSelector((state) => state.allTime.boxOfficeAllTime);
   const status = useSelector((state) => state.comingSoon.status);
   const [q, setQ] = useState('');
-  const [limit, setLimit] = useState(6);
+  const [limit, setLimit] = useState(9);
 
   const navigation = useNavigation();
   const submit = useSubmit();

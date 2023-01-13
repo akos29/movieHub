@@ -10,14 +10,13 @@ import store from './app/store';
 import './index.css';
 import Root from './routes/root';
 import ErrorPage from './error-page';
-// import Index from './routes/index';
-// import { loader as movieLoader } from './routes/movie';
 import Top250 from './components/movie/Top250';
 import BoxOffice from './components/movie/BoxOffice';
 import BoxOfficeAllTimes from './components/movie/BoxOfficeAllTimes';
 import ComingSoon from './components/movie/ComingSoon';
 import { getMovies } from './features/movie/movieSlice';
 import { loader } from './components/Search';
+import Home from './components/movie/Home';
 
 store.dispatch(getMovies());
 
@@ -25,7 +24,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
       path="/"
-      element={<Root />}
+      element={<Home />}
       errorElement={<ErrorPage />}
     >
       <Route errorElement={<ErrorPage />}>
@@ -38,17 +37,21 @@ const router = createBrowserRouter(
         <Route
           path="/boxoffice"
           element={<BoxOffice />}
-          loader={loader}
         />
         <Route
           path="/alltimes"
           element={<BoxOfficeAllTimes />}
-          loader={loader}
+          // loader={loader}
         />
         <Route
           path="/comingsoon"
           element={<ComingSoon />}
-          loader={loader}
+          // loader={loader}
+        />
+        <Route
+          path="/home"
+          element={<Root />}
+          // loader={loader}
         />
       </Route>
     </Route>,

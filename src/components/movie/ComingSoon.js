@@ -12,7 +12,7 @@ function ComingSoon() {
   const comingSoonMovies = useSelector((state) => state.comingSoon.comingSoon);
   const status = useSelector((state) => state.comingSoon.status);
   const [q, setQ] = useState(qr);
-  const [limit, setLimit] = useState(6);
+  const [limit, setLimit] = useState(9);
 
   const navigation = useNavigation();
   const submit = useSubmit();

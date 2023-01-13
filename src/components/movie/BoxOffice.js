@@ -66,7 +66,7 @@ function BoxOffice() {
           }}
         />
       </div>
-      <div id="search-detail" className={navigation.state === 'loading' ? 'loading' : ''}>
+      <div id="search-detail">
         {searchMovies.map((movie) => (
           <>
             <div className="card" key={movie.id}>
