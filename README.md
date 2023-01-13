@@ -62,9 +62,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Flip Movies: React-Redux Capstone] <a name="about-project"></a>
 
-> Web app that allows user to have handful of information about all movies statistical information. To easily access the statistics of movies ranked by critic, by user and boxoffice and can also followup the coming soon movies
+> A web software that provides users with a small amount of statistical information about all movies. To conveniently obtain statistics on movies ranked by critic, user, and box-office, as well as to keep track of upcoming films
 
-**[Space Travelers' Hub]** is web application designed for a company that provides commercial and scientific space travel services which fetches live data from SpaceX API.
+**[Flip Movies]** is web application designed for entertainment to movie lovers which fetches live data from ImDb.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -85,9 +85,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[Display details about rocket and missions]**
-- **[Enable users to book rockets]**
-- **[Enable users to join missions]**
+- **[Enable users to view Top list]**
+- **[Enable users to view coming soon movies]**
+- **[Enable users to view movie earning stats]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +97,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Coming Soon]()
+- [Click here](https://flipmovies.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +130,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/akos29/Space-Travelers-Hub.git
+  git clone https://github.com/akos29/movieHub.git
 ```
 -
 
@@ -231,7 +231,7 @@ If you like this project please don't forget to give us a star.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank the UI designer of web application and anyone who contribute. 
+I would like to thank [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the original UI design idea and [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)  and anyone who contribute. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
