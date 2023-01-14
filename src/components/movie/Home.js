@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
-import { BiCameraMovie } from 'react-icons/bi';
-import { FaBoxOpen, FaTrain } from 'react-icons/fa';
-import { GiOpenTreasureChest } from 'react-icons/gi';
 import { IoIosArrowBack } from 'react-icons/io';
 import Footer from '../Footer';
 
@@ -12,72 +9,66 @@ function Home() {
   return (
     <>
       { home ? (
-        <div id="main-menu" className={home ? 'show' : 'hide'}>
+        <header className={home ? 'show' : 'hide'}>
           <div className="logo-container" id="logo">
             <NavLink
               to="/"
-              onClick={() => setHome(false)}
+              onClick={() => setHome(true)}
             />
           </div>
-          <nav id="menu-items">
+          <nav className="menu-nav">
             <ul>
               <li className="col-1">
                 <NavLink
                   to="/top250"
-
+                  onClick={() => setHome(false)}
+                  onKeyDown={() => setHome(false)}
                 >
-                  <BiCameraMovie size={65} className="icons" />
                   {' '}
-                  <h4>Top 250</h4>
+                  Top 250
                 </NavLink>
               </li>
               <li className="col-2">
                 <NavLink
                   to="/boxoffice"
-
+                  onClick={() => setHome(false)}
+                  onKeyDown={() => setHome(false)}
                 >
-                  <FaBoxOpen size={65} className="icons" />
-                  {' '}
-                  <h4>Box Office </h4>
+                  Box Office
                 </NavLink>
               </li>
               <li className="col-1">
                 <NavLink
                   to="/alltimes"
-
+                  onClick={() => setHome(false)}
+                  onKeyDown={() => setHome(false)}
                 >
-                  <GiOpenTreasureChest size={65} className="icons" />
-                  {' '}
-                  <h4>All Times</h4>
+                  All Times
                 </NavLink>
               </li>
               <li className="col-2">
                 <NavLink
                   to="/comingsoon"
-
+                  onClick={() => setHome(false)}
+                  onKeyDown={() => setHome(false)}
                 >
-
-                  <FaTrain size={65} className="icons" />
                   {' '}
-                  <h4>Coming Soon</h4>
+                  Coming Soon
                 </NavLink>
               </li>
             </ul>
           </nav>
-        </div>
+        </header>
       )
         : (
-          <>
-            <div className="menu-detail">
-              <NavLink to="/" onClick={() => setHome(true)} onKeyDown={() => setHome(true)}>
-                <IoIosArrowBack />
-              </NavLink>
-            </div>
-
-          </>
+          <header>
+            <NavLink to="/" onClick={() => setHome(true)} onKeyDown={() => setHome(true)} className="back-home">
+              <IoIosArrowBack size={92} />
+            </NavLink>
+          </header>
         ) }
 
-      <div id="detail" style={{ backgroundColor: '#000' }}>
+      <div id="detail">
         <Outlet />
         <Footer />
       </div>

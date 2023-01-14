@@ -107,26 +107,22 @@ function Search({ movies }) {
                   <h3 className="title">{movie.title}</h3>
                   <h4>
                     Rank
-                    <span>{movie.rank}</span>
+                    <span className="movie-mark">{movie.rank}</span>
                   </h4>
-                  <ul className="stat">
-                    <li>
-                      Rating
-                      <span>
-                        {' '}
-                        {movie.imDbRating}
-                        {' '}
-                      </span>
-                    </li>
-                    <li>
-                      Count
-                      <span>
-                        {' '}
-                        {numberSeparator(movie.imDbRatingCount)}
-                        {' '}
-                      </span>
-                    </li>
-                  </ul>
+                  <h4>
+                    Rating
+                    <span className="movie-mark">
+                      {movie.imDbRating}
+                    </span>
+                  </h4>
+                  <h4>
+                    Count
+                    <span>
+                      {' '}
+                      {numberSeparator(movie.imDbRatingCount)}
+                      {' '}
+                    </span>
+                  </h4>
                 </div>
               </div>
             </>
