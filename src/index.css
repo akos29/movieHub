@@ -7,6 +7,7 @@
   box-sizing: border-box;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
   font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
 
   /* outline: 1px solid #f00 !important;
   opacity: 1 !important; */
@@ -44,10 +45,10 @@
 }
 
 #root {
-  width: 100%;
+  background-color: var(--bg-1-1);
+  color: var(--secondary);
 
   /* overflow: hidden; */
-  min-height: 100vh;
 }
 
 h2 {
@@ -82,7 +83,7 @@ a {
   text-decoration: none;
   color: var(--secondary);
   font-size: 0.7rem;
-  flex-basis: 5%;
+  flex-basis: 15%;
 }
 
 header {
@@ -92,6 +93,8 @@ header {
   background-color: var(--bg-1-1);
   padding: 15px 30px;
   box-sizing: border-box;
+  border-bottom: 4px solid var(--primary);
+  margin-bottom: 5px;
 }
 
 div.logo-container {
@@ -101,14 +104,15 @@ div.logo-container {
 
 .menu-nav ul {
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
 }
 
 .menu-nav ul li a {
-  display: none;
+  display: block;
+  margin: 0 5px;
 }
 
 .back-home {
@@ -119,7 +123,7 @@ div.logo-container {
   content: url('../assets/mclogo.png');
   margin-right: 0.5rem;
   position: relative;
-  width: 150px;
+  width: 85px;
   height: auto;
   top: 1px;
   align-self: center;
@@ -170,7 +174,7 @@ div.logo-container {
 .pagination {
   width: 85vw;
   margin-left: 5%;
-  overflow-x: scroll;
+  overflow-x: visible;
   display: flex;
   list-style-type: none;
   align-items: center;
@@ -179,9 +183,7 @@ div.logo-container {
 
 .pagination li {
   cursor: pointer;
-  margin: 0.5em;
-  background-color: var(--bg-1);
-  padding: 10px;
+  margin: 0.5px;
   border-radius: 5px;
   color: var(--secondary);
 }
@@ -217,7 +219,7 @@ div.logo-container {
 #detail {
   min-height: 70vh;
   margin-bottom: 0;
-  background-image: url('../assets/bgimage.jpg');
+  background-color: var(--bg-2);
   background-position: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -236,30 +238,33 @@ div.logo-container {
 .card-detail {
   color: var(--secondary);
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: flex-end;
   letter-spacing: 0.5px;
+  padding: 1rem;
 }
 
-.card-detail :nth-last-child(2n) {
-  background-color: #eee;
-  color: #30363c;
+/* .card-detail :nth-last-child(2n) {
+  background-color: var(--secondary);
   padding: 2px 5px;
   width: 100%;
+} */
+
+.card-detail :nth-last-child(2n) {
+  background-color: var(--bg-1-1);
+  color: var(--secondary);
+  padding: 2px 5px;
+  width: 100%;
+  align-items: end;
 }
 
 .card-detail :nth-last-child(2n + 1) {
-  background-color: #30363c;
-  color: #eee;
   padding: 2px 5px;
   width: 100%;
 }
 
-.card-container .movie-mark {
-  background-color: orange;
-  color: orange;
-}
+/*
 
 table {
   display: flex;
@@ -298,7 +303,7 @@ table tbody tr:nth-child(2n) {
   font-weight: 600;
   background-color: var(--bg-1-1);
   color: orange;
-}
+} */
 
 /* .card-detail > ul > li > span {
   margin-left: 0.6rem;
@@ -311,8 +316,13 @@ table tbody tr:nth-child(2n) {
   font-size: 1rem;
 }
 
+.search {
+  margin: 0 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .search form input[type="search"] {
-  width: 100%;
   padding: 1rem 5rem;
   font-size: 1rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='%23999' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' /%3E%3C/svg%3E");
@@ -326,6 +336,7 @@ table tbody tr:nth-child(2n) {
 }
 
 #search-spinner {
+  display: none;
   width: 1rem;
   height: 1rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23000' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M20 4v5h-.582m0 0a8.001 8.001 0 00-15.356 2m15.356-2H15M4 20v-5h.581m0 0a8.003 8.003 0 0015.357-2M4.581 15H9' /%3E%3C/svg%3E");
@@ -348,9 +359,6 @@ table tbody tr:nth-child(2n) {
 input[type="number"] {
   width: 75px;
   font-size: 1rem;
-  margin: 1% auto 1% 50%;
-
-  /* margin-left: 50%; */
   padding: 0.5rem 1rem;
 }
 
@@ -402,8 +410,8 @@ footer {
 @media (min-width: 768px) {
   .menu-nav ul li a {
     display: block;
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 0.95rem;
+    padding: 0.45rem;
   }
 
   #main-menu {
@@ -471,10 +479,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    min-height: 30vh;
     padding-bottom: 6em;
   }
 
-  .card,
   .box-card,
   .coming-card,
   .allTime-card {
@@ -485,9 +493,5 @@ footer {
     position: relative;
     overflow: hidden;
     border-radius: 3px;
-  }
-
-  .card-detail {
-    flex: 60%;
   }
 }

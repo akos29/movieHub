@@ -25,7 +25,7 @@ function Home() {
                   onKeyDown={() => setHome(false)}
                 >
                   {' '}
-                  Top 250
+                  Top
                 </NavLink>
               </li>
               <li className="col-2">
@@ -43,7 +43,7 @@ function Home() {
                   onClick={() => setHome(false)}
                   onKeyDown={() => setHome(false)}
                 >
-                  All Times
+                  All
                 </NavLink>
               </li>
               <li className="col-2">
@@ -53,7 +53,7 @@ function Home() {
                   onKeyDown={() => setHome(false)}
                 >
                   {' '}
-                  Coming Soon
+                  Coming
                 </NavLink>
               </li>
             </ul>
@@ -63,7 +63,7 @@ function Home() {
         : (
           <header>
             <NavLink to="/" onClick={() => setHome(true)} onKeyDown={() => setHome(true)} className="back-home">
-              <IoIosArrowBack size={92} />
+              <IoIosArrowBack size={50} />
             </NavLink>
           </header>
         ) }

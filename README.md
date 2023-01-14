@@ -64,7 +64,7 @@ After you're finished please remove all the comments and instructions!
 
 > A web software that provides users with a small amount of statistical information about all movies. To conveniently obtain statistics on movies ranked by critic, user, and box-office, as well as to keep track of upcoming films
 
-**[Flip Movies]** is web application designed for entertainment to movie lovers which fetches live data from ImDb.
+**[Flip Movies]** is web application designed for entertainment to movie lovers which fetches live data from ImDb and show a metric(numeric) related information.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -97,7 +97,8 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Click here](https://flipmovies.netlify.app/)
+- [Live Demo](https://flipmovies.netlify.app/)
+- [Video demo](https://www.loom.com/share/1886d9fc2a54436c81eb88f826871aca)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

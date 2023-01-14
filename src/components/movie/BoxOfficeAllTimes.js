@@ -70,44 +70,41 @@ function BoxOfficeAllTimes() {
             ? searchMovies.map((movie) => (
               <>
                 <div className="card" key={movie.id}>
-                  <table className="card-detail">
-                    <tbody className="card-detail">
-                      <tr>
-                        <td>Rank</td>
-                        {' '}
-                        <td>{movie.rank}</td>
-                      </tr>
-                      <tr>
-                        <td>Title</td>
-                        {' '}
-                        <td>{movie.title}</td>
-                      </tr>
-                      <tr>
-                        <td>Life Time Worth</td>
-                        {' '}
-                        <td>{movie.worldwideLifetimeGross}</td>
-                      </tr>
-                      <tr>
-                        <td>Domestic (%)</td>
-                        {' '}
-                        <td>{movie.domestic}</td>
-                      </tr>
-                      <tr>
-                        <td>Foreign (%)</td>
-                        {' '}
-                        <td>{movie.foreign}</td>
-                      </tr>
-                      <tr>
-                        <td>Year</td>
-                        {' '}
-                        <td>{movie.year}</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div className="card-detail">
+                    <h4>
+                      Rank
+                      <span className="movie-mark">{movie.rank}</span>
+                    </h4>
+                    <h4>
+                      Title
+                      {' '}
+                      <span>{movie.title}</span>
+                    </h4>
+                    <h4>
+                      Life Time Worth
+                      {' '}
+                      <span>{movie.worldwideLifetimeGross}</span>
+                    </h4>
+                    <h4>
+                      Domestic (%)
+                      {' '}
+                      <span>{movie.domestic}</span>
+                    </h4>
+                    <h4>
+                      Foreign (%)
+                      {' '}
+                      <span>{movie.foreign}</span>
+                    </h4>
+                    <h4>
+                      Year
+                      {' '}
+                      <span>{movie.year}</span>
+                    </h4>
+                  </div>
                 </div>
               </>
             ))
-            : <>There is something wrong, please try again</>
+            : <>There is something wrong, please h4y again</>
           }
       </div>
     </>
