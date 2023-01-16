@@ -71,35 +71,56 @@ function BoxOfficeAllTimes() {
               <>
                 <div className="card" key={movie.id}>
                   <div className="card-detail">
-                    <h4>
-                      Rank
-                      <span className="movie-mark">{movie.rank}</span>
-                    </h4>
-                    <h4>
-                      Title
-                      {' '}
-                      <span>{movie.title}</span>
-                    </h4>
-                    <h4>
-                      Life Time Worth
-                      {' '}
-                      <span>{movie.worldwideLifetimeGross}</span>
-                    </h4>
-                    <h4>
-                      Domestic (%)
-                      {' '}
-                      <span>{movie.domestic}</span>
-                    </h4>
-                    <h4>
-                      Foreign (%)
-                      {' '}
-                      <span>{movie.foreign}</span>
-                    </h4>
-                    <h4>
-                      Year
-                      {' '}
-                      <span>{movie.year}</span>
-                    </h4>
+                    <ul>
+                      <li>
+                        <h4>
+                          Rank
+                          <span className="movie-mark">{movie.rank}</span>
+                        </h4>
+
+                      </li>
+                      <li>
+                        <h4>
+                          Title
+                          {' '}
+                          <span>{movie.title}</span>
+                        </h4>
+
+                      </li>
+                      <li>
+                        <h4>
+                          Life Time Worth
+                          {' '}
+                          <span>{movie.worldwideLifetimeGross}</span>
+                        </h4>
+
+                      </li>
+                      <li>
+                        {' '}
+                        <h4>
+                          Domestic (%)
+                          {' '}
+                          <span>{movie.domestic}</span>
+                        </h4>
+
+                      </li>
+                      <li>
+                        {' '}
+                        <h4>
+                          Foreign (%)
+                          {' '}
+                          <span>{movie.foreign}</span>
+                        </h4>
+
+                      </li>
+                      <li>
+                        <h4>
+                          Year
+                          {' '}
+                          <span>{movie.year}</span>
+                        </h4>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </>
