@@ -3,7 +3,9 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
-      All right reserved.
+      <span>&copy; Kibrewossen</span>
+      {' '}
+      All right reserved. 2023
     </footer>
   );
 }
