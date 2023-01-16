@@ -104,25 +104,38 @@ function Search({ movies }) {
                   <img src={movie.image} alt={movie.fullTitle} />
                 </div>
                 <div className="card-detail">
-                  <h3 className="title">{movie.title}</h3>
-                  <h4>
-                    Rank
-                    <span className="movie-mark">{movie.rank}</span>
-                  </h4>
-                  <h4>
-                    Rating
-                    <span className="movie-mark">
-                      {movie.imDbRating}
-                    </span>
-                  </h4>
-                  <h4>
-                    Count
-                    <span>
-                      {' '}
-                      {numberSeparator(movie.imDbRatingCount)}
-                      {' '}
-                    </span>
-                  </h4>
+                  <ul>
+                    <li><h3 className="title">{movie.title}</h3></li>
+                    <li>
+                      <h4>
+                        Rank
+                        <span className="movie-mark">{movie.rank}</span>
+                      </h4>
+
+                    </li>
+                    <li>
+                      <h4>
+                        Rating
+                        <span className="movie-mark">
+                          {movie.imDbRating}
+                        </span>
+                      </h4>
+
+                    </li>
+                    <li>
+                      <h4>
+                        Count
+                        <span>
+                          {' '}
+                          {numberSeparator(movie.imDbRatingCount)}
+                          {' '}
+                        </span>
+                      </h4>
+
+                    </li>
+
+                  </ul>
+
                 </div>
               </div>
             </>

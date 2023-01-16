@@ -14,7 +14,9 @@ function Home() {
             <NavLink
               to="/"
               onClick={() => setHome(true)}
-            />
+            >
+              Flip Movies
+            </NavLink>
           </div>
           <nav className="menu-nav">
             <ul>
