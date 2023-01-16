@@ -98,7 +98,7 @@ After you're finished please remove all the comments and instructions!
 > Add a link to your deployed project.
 
 - [Live Demo](https://flipmovies.netlify.app/)
-- [Video demo](https://www.loom.com/share/1886d9fc2a54436c81eb88f826871aca)
+- [Video demo]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
