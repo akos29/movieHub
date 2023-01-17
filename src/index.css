@@ -422,7 +422,8 @@ footer span {
     flex-wrap: wrap;
     justify-content: space-evenly;
     min-height: 30vh;
-    padding-bottom: 2em;
+    padding-bottom: 6em;
+    margin: 0 7%;
   }
 
   .box-card,
