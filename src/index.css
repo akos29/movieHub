@@ -7,7 +7,6 @@
   box-sizing: border-box;
   transition: width 2s, height 2s, background-color 2s, transform 2s;
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
 
   /* outline: 1px solid #f00 !important;
   opacity: 1 !important; */
@@ -131,6 +130,10 @@ div.logo-container a {
   color: var(--primary);
   font-weight: 600;
   border-bottom: 2px solid var(--text);
+}
+
+.menu-nav ul li:nth-child(1) a {
+  border-bottom: 2px solid var(--bg-1-1);
 }
 
 .back-home {
