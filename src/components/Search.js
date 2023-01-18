@@ -10,7 +10,6 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 export async function loader({ request }) {
   const url = new URL(request.url);
   const q = url.searchParams.get('q');
-  // const contacts = await getMovie(q,);
   return q;
 }
 
@@ -36,7 +35,6 @@ export function getMovie(query, m) {
 }
 
 function Search({ movies }) {
-  // const qr = useLoaderData();
   const [q, setQ] = useState('');
   const [limit, setLimit] = useState(9);
   const navigate = useNavigate();

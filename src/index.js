@@ -33,7 +33,7 @@ const router = createBrowserRouter(
           path="/top250/:id"
           element={<DisplayMovie />}
         />
-        {/* </Route> */}
+
         <Route
           path="/boxoffice"
           element={<BoxOffice />}
@@ -41,17 +41,17 @@ const router = createBrowserRouter(
         <Route
           path="/alltimes"
           element={<BoxOfficeAllTimes />}
-          // loader={loader}
+
         />
         <Route
           path="/comingsoon"
           element={<ComingSoon />}
-          // loader={loader}
+
         />
         <Route
           path="/home"
           element={<Root />}
-          // loader={loader}
+
         />
       </Route>
     </Route>,
