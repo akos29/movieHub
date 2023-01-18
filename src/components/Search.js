@@ -3,7 +3,7 @@
 /* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 import {
-  Form, useSubmit,
+  Form, useSubmit, useNavigate,
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import sortBy from 'sort-by';
@@ -44,7 +44,7 @@ function Search({ movies }) {
   // const qr = useLoaderData();
   const [q, setQ] = useState('');
   const [limit, setLimit] = useState(9);
-  // const navigation = useNavigation();
+  const navigate = useNavigate();
   const submit = useSubmit();
 
   useEffect(() => {
@@ -99,45 +99,55 @@ function Search({ movies }) {
         { searchMovies.length > 0
           ? searchMovies.map((movie) => (
             <>
-              <div className="card" key={movie.id}>
-                <div className="card-image">
-                  <img src={movie.image} alt={movie.fullTitle} />
-                </div>
-                <div className="card-detail">
-                  <ul>
-                    <li><h3 className="title">{movie.title}</h3></li>
-                    <li>
-                      <h4>
-                        Rank
-                        <span className="movie-mark">{movie.rank}</span>
-                      </h4>
+              <button
+                // to={`/top250/:${movie.id}`}
+                onClick={() => navigate(`/top250/${movie.id}`, { state: movie })}
+                // onKeyDown={() => setHome(false)}
+                type="button"
+              >
+                <>
 
-                    </li>
-                    <li>
-                      <h4>
-                        Rating
-                        <span className="movie-mark">
-                          {movie.imDbRating}
-                        </span>
-                      </h4>
+                  <div className="card" key={movie.id}>
+                    <div className="card-image">
+                      <img src={movie.image} alt={movie.fullTitle} />
+                    </div>
+                    <div className="card-detail">
+                      <ul>
+                        <li><h3 className="title">{movie.title}</h3></li>
+                        <li>
+                          <h4>
+                            Rank
+                            <span className="movie-mark">{movie.rank}</span>
+                          </h4>
 
-                    </li>
-                    <li>
-                      <h4>
-                        Count
-                        <span>
-                          {' '}
-                          {numberSeparator(movie.imDbRatingCount)}
-                          {' '}
-                        </span>
-                      </h4>
+                        </li>
+                        <li>
+                          <h4>
+                            Rating
+                            <span className="movie-mark">
+                              {movie.imDbRating}
+                            </span>
+                          </h4>
 
-                    </li>
+                        </li>
+                        <li>
+                          <h4>
+                            Count
+                            <span>
+                              {' '}
+                              {numberSeparator(movie.imDbRatingCount)}
+                              {' '}
+                            </span>
+                          </h4>
 
-                  </ul>
+                        </li>
 
-                </div>
-              </div>
+                      </ul>
+
+                    </div>
+                  </div>
+                </>
+              </button>
             </>
           )) : (
             <h1>

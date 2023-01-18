@@ -15,8 +15,9 @@ import BoxOffice from './components/movie/BoxOffice';
 import BoxOfficeAllTimes from './components/movie/BoxOfficeAllTimes';
 import ComingSoon from './components/movie/ComingSoon';
 import { getMovies } from './features/movie/movieSlice';
-import { loader } from './components/Search';
+// import { loader } from './components/Search';
 import Home from './components/movie/Home';
+import DisplayMovie from './components/movie/DisplayMovie';
 
 store.dispatch(getMovies());
 
@@ -29,11 +30,17 @@ const router = createBrowserRouter(
     >
       <Route errorElement={<ErrorPage />}>
         <Route index element={<Top250 />} />
-        <Route
+
+        {/* <Route
           path="/top250"
           element={<Top250 />}
           loader={loader}
+        > */}
+        <Route
+          path="/top250/:id"
+          element={<DisplayMovie />}
         />
+        {/* </Route> */}
         <Route
           path="/boxoffice"
           element={<BoxOffice />}
