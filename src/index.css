@@ -58,9 +58,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--secondary);
-  font-weight: 400;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -221,6 +222,7 @@ div.logo-container a {
 }
 
 .card {
+  cursor: pointer;
   width: 300px;
   margin: 1rem auto;
   background-color: var(--bg-1-1);
