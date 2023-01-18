@@ -20,16 +20,6 @@ function Home() {
           </div>
           <nav className="menu-nav">
             <ul>
-              <li className="col-1">
-                <NavLink
-                  to="/top250"
-                  onClick={() => setHome(false)}
-                  onKeyDown={() => setHome(false)}
-                >
-                  {' '}
-                  Top
-                </NavLink>
-              </li>
               <li className="col-2">
                 <NavLink
                   to="/boxoffice"

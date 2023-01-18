@@ -6,6 +6,8 @@ function DisplayMovie() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const numberSeparator = (a) => a.replace(new RegExp(`^(\\d{${a.length % 3 ? a.length % 3 : 0}})(\\d{3})`, 'g'), '$1 $2').replace(/(\d{3})+?/gi, '$1 ').trim();
+
   return (
     <>
       <header>
@@ -48,7 +50,7 @@ function DisplayMovie() {
                 Count
                 <span>
                   {' '}
-                  {/* {numberSeparator(location.state.imDbRatingCount)} */}
+                  {numberSeparator(location.state.imDbRatingCount)}
                   {' '}
                 </span>
               </h4>

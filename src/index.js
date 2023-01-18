@@ -15,7 +15,6 @@ import BoxOffice from './components/movie/BoxOffice';
 import BoxOfficeAllTimes from './components/movie/BoxOfficeAllTimes';
 import ComingSoon from './components/movie/ComingSoon';
 import { getMovies } from './features/movie/movieSlice';
-// import { loader } from './components/Search';
 import Home from './components/movie/Home';
 import DisplayMovie from './components/movie/DisplayMovie';
 
@@ -30,12 +29,6 @@ const router = createBrowserRouter(
     >
       <Route errorElement={<ErrorPage />}>
         <Route index element={<Top250 />} />
-
-        {/* <Route
-          path="/top250"
-          element={<Top250 />}
-          loader={loader}
-        > */}
         <Route
           path="/top250/:id"
           element={<DisplayMovie />}

@@ -102,6 +102,12 @@ header {
   overflow-y: hidden;
 }
 
+button {
+  background-color: transparent;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 div.logo-container {
   height: 45px;
   padding: 5px 10px;

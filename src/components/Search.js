@@ -27,8 +27,6 @@ export function pagination(length) {
   return arr;
 }
 
-const numberSeparator = (a) => a.replace(new RegExp(`^(\\d{${a.length % 3 ? a.length % 3 : 0}})(\\d{3})`, 'g'), '$1 $2').replace(/(\d{3})+?/gi, '$1 ').trim();
-
 export function getMovie(query, m) {
   let movies = m;
   if (!movies) {
@@ -121,27 +119,6 @@ function Search({ movies }) {
                           </h4>
 
                         </li>
-                        <li>
-                          <h4>
-                            Rating
-                            <span className="movie-mark">
-                              {movie.imDbRating}
-                            </span>
-                          </h4>
-
-                        </li>
-                        <li>
-                          <h4>
-                            Count
-                            <span>
-                              {' '}
-                              {numberSeparator(movie.imDbRatingCount)}
-                              {' '}
-                            </span>
-                          </h4>
-
-                        </li>
-
                       </ul>
 
                     </div>
