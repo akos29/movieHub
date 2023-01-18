@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable max-len */
 import React, { useState, useEffect } from 'react';
 import {
   Form, useSubmit, useNavigate,
@@ -51,6 +48,11 @@ function Search({ movies }) {
 
   const [searchMovies, setSearchMovies] = useState(movies.slice(0, 9));
   const pages = pagination(movies.length);
+
+  const setPagination = (start, end) => {
+    setSearchMovies(movies.slice(start, end));
+  };
+
   return (
     <>
       <div className="search">
@@ -98,9 +100,7 @@ function Search({ movies }) {
           ? searchMovies.map((movie) => (
             <>
               <button
-                // to={`/top250/:${movie.id}`}
                 onClick={() => navigate(`/top250/${movie.id}`, { state: movie })}
-                // onKeyDown={() => setHome(false)}
                 type="button"
               >
                 <>
@@ -137,9 +137,21 @@ function Search({ movies }) {
             </h1>
           )}
         <ul className="pagination">
-          <li onClick={() => setSearchMovies(movies.slice(0, 9))}><IoIosArrowBack /></li>
-          {pages.length > 0 ? pages.map((index, value) => <li key={index} onClick={() => setSearchMovies(movies.slice(index, (index + 9)))}>{value}</li>) : null }
-          <li onClick={() => setSearchMovies(movies.slice((movies.length - 7), (movies.length - 1)))}><IoIosArrowForward /></li>
+          <li>
+            {' '}
+            <button type="button" aria-label="back-button" onClick={() => setPagination(0, 9)}><IoIosArrowBack /></button>
+          </li>
+          { pages.length > 0
+            ? pages.map((index, value) => (
+              <li key={index}>
+                <button type="button" onClick={() => setPagination(index, (index + 9))}>
+                  {value}
+                </button>
+
+              </li>
+            ))
+            : null }
+          <li><button type="button" aria-label="forward-button" onClick={() => setPagination(movies.length - 7, movies.length - 1)}><IoIosArrowForward /></button></li>
         </ul>
       </div>
 
