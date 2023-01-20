@@ -1,9 +1,19 @@
-import React, { useState } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
+import { changeHome } from '../features/movie/movieSlice';
 
 function Navbar() {
-  const [home, setHome] = useState(true);
+  // const [home, setHome] = useState(true);
+  // const home = useSelector((state) => state.movies.movies.parent);
+
+  const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(changeHome());
+  // }, [dispatch, home]);
+  const location = useLocation();
+  const { home } = location;
   const navigate = useNavigate();
   return (
     <>
@@ -12,7 +22,7 @@ function Navbar() {
           <div className="logo-container" id="logo">
             <NavLink
               to="/"
-              onClick={() => setHome(true)}
+              onClick={() => dispatch(changeHome())}
             >
               Flip Movies
             </NavLink>
@@ -22,8 +32,8 @@ function Navbar() {
               <li className="col-2">
                 <NavLink
                   to="/boxoffice"
-                  onClick={() => setHome(false)}
-                  onKeyDown={() => setHome(false)}
+                  onClick={() => dispatch(changeHome())}
+                  onKeyDown={() => dispatch(changeHome())}
                 >
                   Box Office
                 </NavLink>
@@ -31,8 +41,8 @@ function Navbar() {
               <li className="col-1">
                 <NavLink
                   to="/alltimes"
-                  onClick={() => setHome(false)}
-                  onKeyDown={() => setHome(false)}
+                  onClick={() => dispatch(changeHome())}
+                  onKeyDown={() => dispatch(changeHome())}
                 >
                   All
                 </NavLink>
@@ -40,8 +50,8 @@ function Navbar() {
               <li className="col-2">
                 <NavLink
                   to="/comingsoon"
-                  onClick={() => setHome(false)}
-                  onKeyDown={() => setHome(false)}
+                  onClick={() => dispatch(changeHome())}
+                  onKeyDown={() => dispatch(changeHome())}
                 >
                   {' '}
                   Coming
@@ -56,7 +66,7 @@ function Navbar() {
             <button
               type="button"
               onClick={() => {
-                navigate(-1);
+                navigate(-1, { home: true });
               }}
             >
               <IoIosArrowBack size={50} />

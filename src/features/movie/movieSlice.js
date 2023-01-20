@@ -458,6 +458,7 @@ const initialState = {
         ],
   status: 'idle',
   searchResults: [],
+  parent: true,
 };
 
 export const getMovies = createAsyncThunk(
@@ -477,6 +478,9 @@ export const movieSlice = createSlice({
     fetchByName: (state, action) => {
       [...state.searchResults, action.payload];
     },
+    changeHome: (state) => {
+      [...state.parent, !state.parent]
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -494,7 +498,7 @@ export const movieSlice = createSlice({
   },
 });
 
-export const { getByName } = movieSlice.actions;
+export const { getByName, changeHome } = movieSlice.actions;
 
 export const selectMovies = (state) => state.movies;
 

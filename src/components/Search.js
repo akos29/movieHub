@@ -40,6 +40,11 @@ function Search({ movies }) {
   const navigate = useNavigate();
   const submit = useSubmit();
 
+  // const home = useSelector((state) => state.movies.movies.parent);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(changeHome());
+  // }, [dispatch, home]);
   useEffect(() => {
     document.getElementById('q').value = q;
   }, [q]);
@@ -98,7 +103,7 @@ function Search({ movies }) {
           ? searchMovies.map((movie) => (
             <>
               <button
-                onClick={() => navigate(`/top250/${movie.id}`, { state: movie })}
+                onClick={() => navigate(`/top250/${movie.id}`, { state: movie, home: false })}
                 type="button"
               >
                 <>
