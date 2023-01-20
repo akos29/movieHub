@@ -1,26 +1,13 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
-import { IoIosArrowBack } from 'react-icons/io';
+import { useLocation } from 'react-router-dom';
 
 function DisplayMovie() {
-  const navigate = useNavigate();
   const location = useLocation();
 
   const numberSeparator = (a) => a.replace(new RegExp(`^(\\d{${a.length % 3 ? a.length % 3 : 0}})(\\d{3})`, 'g'), '$1 $2').replace(/(\d{3})+?/gi, '$1 ').trim();
 
   return (
     <>
-      <header>
-        <button
-          type="button"
-          onClick={() => {
-            navigate(-1);
-          }}
-        >
-          <IoIosArrowBack size={50} />
-        </button>
-
-      </header>
 
       <div className="card" key={location.state.id}>
         <div className="card-image">
