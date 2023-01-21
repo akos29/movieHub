@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import {
   Form, useSubmit, useNavigate,
 } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import sortBy from 'sort-by';
 import { matchSorter } from 'match-sorter';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { changeHome } from '../features/movie/movieSlice';
 
 export async function loader({ request }) {
   const url = new URL(request.url);
@@ -40,11 +42,11 @@ function Search({ movies }) {
   const navigate = useNavigate();
   const submit = useSubmit();
 
-  // const home = useSelector((state) => state.movies.movies.parent);
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(changeHome());
-  // }, [dispatch, home]);
+  const home = useSelector((state) => state.movies.movies.parent);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(changeHome());
+  }, [dispatch, home]);
   useEffect(() => {
     document.getElementById('q').value = q;
   }, [q]);
@@ -103,7 +105,10 @@ function Search({ movies }) {
           ? searchMovies.map((movie) => (
             <>
               <button
-                onClick={() => navigate(`/top250/${movie.id}`, { state: movie, home: false })}
+                onClick={() => {
+                  navigate(`/top250/${movie.id}`, { state: movie });
+                  dispatch(changeHome(false));
+                }}
                 type="button"
               >
                 <>

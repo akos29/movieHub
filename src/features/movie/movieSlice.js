@@ -478,8 +478,8 @@ export const movieSlice = createSlice({
     fetchByName: (state, action) => {
       [...state.searchResults, action.payload];
     },
-    changeHome: (state) => {
-      [...state.parent, !state.parent]
+    changeHome: (state,action=true) => {
+      state.parent =  action.payload;
     }
   },
   extraReducers: (builder) => {

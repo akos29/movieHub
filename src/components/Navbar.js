@@ -1,19 +1,20 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { NavLink, useNavigate, useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
 import { changeHome } from '../features/movie/movieSlice';
 
 function Navbar() {
   // const [home, setHome] = useState(true);
-  // const home = useSelector((state) => state.movies.movies.parent);
 
   const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(changeHome());
-  // }, [dispatch, home]);
-  const location = useLocation();
-  const { home } = location;
+  const home = useSelector((state) => state.movies.parent);
+  console.log(home);
+  useEffect(() => {
+    dispatch(changeHome());
+  }, [dispatch, home]);
+  // const location = useLocation();
+  // const { home } = location;
   const navigate = useNavigate();
   return (
     <>
@@ -66,7 +67,8 @@ function Navbar() {
             <button
               type="button"
               onClick={() => {
-                navigate(-1, { home: true });
+                dispatch(changeHome(true));
+                navigate(-1);
               }}
             >
               <IoIosArrowBack size={50} />
