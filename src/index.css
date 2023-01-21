@@ -82,7 +82,7 @@ ul li {
 
 a {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--bg-1);
   font-size: 0.7rem;
   flex-basis: 15%;
 }
@@ -100,6 +100,11 @@ header {
   align-items: center;
   max-height: 45px;
   overflow-y: hidden;
+}
+
+header a {
+  color: var(--bg-1);
+  /* background-color: var(--bg-1); */
 }
 
 button {

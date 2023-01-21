@@ -9,7 +9,7 @@ function DisplayMovie() {
   return (
     <>
 
-      <div className="card" key={location.state.id}>
+      <div className="movie-card" key={location.state.id}>
         <div className="card-image">
           <img src={location.state.image} alt={location.state.fullTitle} />
         </div>

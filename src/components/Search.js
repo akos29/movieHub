@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {
   Form, useSubmit, useNavigate,
 } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import sortBy from 'sort-by';
 import { matchSorter } from 'match-sorter';
@@ -42,11 +42,11 @@ function Search({ movies }) {
   const navigate = useNavigate();
   const submit = useSubmit();
 
-  const home = useSelector((state) => state.movies.movies.parent);
+  // const home = useSelector((state) => state.movies.movies.parent);
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(changeHome());
-  }, [dispatch, home]);
+  // useEffect(() => {
+  //   dispatch(changeHome());
+  // }, [dispatch, home]);
   useEffect(() => {
     document.getElementById('q').value = q;
   }, [q]);
@@ -107,7 +107,8 @@ function Search({ movies }) {
               <button
                 onClick={() => {
                   navigate(`/top250/${movie.id}`, { state: movie });
-                  dispatch(changeHome(false));
+                  dispatch(changeHome());
+                  // setHome(false);
                 }}
                 type="button"
               >

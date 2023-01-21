@@ -23,6 +23,7 @@ store.dispatch(getMovies());
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
+      exact
       path="/"
       element={<Home />}
       errorElement={<ErrorPage />}
@@ -30,15 +31,18 @@ const router = createBrowserRouter(
       <Route errorElement={<ErrorPage />}>
         <Route index element={<Top250 />} />
         <Route
+          exact
           path="/top250/:id"
           element={<DisplayMovie />}
         />
 
         <Route
+          exact
           path="/boxoffice"
           element={<BoxOffice />}
         />
         <Route
+          exact
           path="/alltimes"
           element={<BoxOfficeAllTimes />}
 
@@ -49,6 +53,7 @@ const router = createBrowserRouter(
 
         />
         <Route
+          exact
           path="/home"
           element={<Root />}
 

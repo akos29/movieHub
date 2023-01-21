@@ -1,21 +1,9 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { NavLink, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { PropType } from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
-import { changeHome } from '../features/movie/movieSlice';
 
-function Navbar() {
-  // const [home, setHome] = useState(true);
-
-  const dispatch = useDispatch();
-  const home = useSelector((state) => state.movies.parent);
-  console.log(home);
-  useEffect(() => {
-    dispatch(changeHome());
-  }, [dispatch, home]);
-  // const location = useLocation();
-  // const { home } = location;
-  const navigate = useNavigate();
+function Navbar({ home, setHome }) {
   return (
     <>
       { home ? (
@@ -23,7 +11,7 @@ function Navbar() {
           <div className="logo-container" id="logo">
             <NavLink
               to="/"
-              onClick={() => dispatch(changeHome())}
+              onClick={() => setHome(true)}
             >
               Flip Movies
             </NavLink>
@@ -33,8 +21,8 @@ function Navbar() {
               <li className="col-2">
                 <NavLink
                   to="/boxoffice"
-                  onClick={() => dispatch(changeHome())}
-                  onKeyDown={() => dispatch(changeHome())}
+                  onClick={() => setHome(false)}
+                  onKeyDown={() => setHome(false)}
                 >
                   Box Office
                 </NavLink>
@@ -42,8 +30,8 @@ function Navbar() {
               <li className="col-1">
                 <NavLink
                   to="/alltimes"
-                  onClick={() => dispatch(changeHome())}
-                  onKeyDown={() => dispatch(changeHome())}
+                  onClick={() => setHome(false)}
+                  onKeyDown={() => setHome(false)}
                 >
                   All
                 </NavLink>
@@ -51,8 +39,8 @@ function Navbar() {
               <li className="col-2">
                 <NavLink
                   to="/comingsoon"
-                  onClick={() => dispatch(changeHome())}
-                  onKeyDown={() => dispatch(changeHome())}
+                  onClick={() => setHome(false)}
+                  onKeyDown={() => setHome(false)}
                 >
                   {' '}
                   Coming
@@ -64,20 +52,26 @@ function Navbar() {
       )
         : (
           <header>
-            <button
-              type="button"
-              onClick={() => {
-                dispatch(changeHome(true));
-                navigate(-1);
-              }}
+            <NavLink
+              to="/"
+              onClick={() => setHome(true)}
+              // onClick={() => {
+              //   dispatch(setHome(true));
+              //   navigate('/');
+              // }}
             >
               <IoIosArrowBack size={50} />
-            </button>
+            </NavLink>
 
           </header>
         ) }
     </>
   );
 }
+
+Navbar.propType = {
+  home: PropType.boolean.required,
+  setHome: PropType.function,
+};
 
 export default Navbar;
