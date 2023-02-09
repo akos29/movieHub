@@ -1,0 +1,1983 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movies Test Top 250 movies snapshot test 1`] = `
+<div
+  className="wrapper"
+>
+  <div>
+    Movies
+  </div>
+  <div
+    id="search-detail"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Shawshank Redemption (1994)"
+          src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Shawshank Redemption
+        </h3>
+        <h4
+          id="1"
+        >
+          Rank
+          <span>
+            1
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              9.2
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Godfather (1972)"
+          src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.7015_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Godfather
+        </h3>
+        <h4
+          id="2"
+        >
+          Rank
+          <span>
+            2
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              9.2
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Dark Knight (2008)"
+          src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Dark Knight
+        </h3>
+        <h4
+          id="3"
+        >
+          Rank
+          <span>
+            3
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              9.0
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Godfather: Part II (1974)"
+          src="https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.7015_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Godfather: Part II
+        </h3>
+        <h4
+          id="4"
+        >
+          Rank
+          <span>
+            4
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              9.0
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="12 Angry Men (1957)"
+          src="https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          12 Angry Men
+        </h3>
+        <h4
+          id="5"
+        >
+          Rank
+          <span>
+            5
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              9.0
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Schindler's List (1993)"
+          src="https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Schindler's List
+        </h3>
+        <h4
+          id="6"
+        >
+          Rank
+          <span>
+            6
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.9
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Lord of the Rings: The Return of the King (2003)"
+          src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Lord of the Rings: The Return of the King
+        </h3>
+        <h4
+          id="7"
+        >
+          Rank
+          <span>
+            7
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.9
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Pulp Fiction (1994)"
+          src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Pulp Fiction
+        </h3>
+        <h4
+          id="8"
+        >
+          Rank
+          <span>
+            8
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.8
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Lord of the Rings: The Fellowship of the Ring (2001)"
+          src="https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Lord of the Rings: The Fellowship of the Ring
+        </h3>
+        <h4
+          id="9"
+        >
+          Rank
+          <span>
+            9
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.8
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Good, the Bad and the Ugly (1966)"
+          src="https://m.media-amazon.com/images/M/MV5BNjJlYmNkZGItM2NhYy00MjlmLTk5NmQtNjg1NmM2ODU4OTMwXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Good, the Bad and the Ugly
+        </h3>
+        <h4
+          id="10"
+        >
+          Rank
+          <span>
+            10
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.8
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Forrest Gump (1994)"
+          src="https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Forrest Gump
+        </h3>
+        <h4
+          id="11"
+        >
+          Rank
+          <span>
+            11
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.8
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Fight Club (1999)"
+          src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Fight Club
+        </h3>
+        <h4
+          id="12"
+        >
+          Rank
+          <span>
+            12
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.7
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Lord of the Rings: The Two Towers (2002)"
+          src="https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Lord of the Rings: The Two Towers
+        </h3>
+        <h4
+          id="13"
+        >
+          Rank
+          <span>
+            13
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.7
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Inception (2010)"
+          src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Inception
+        </h3>
+        <h4
+          id="14"
+        >
+          Rank
+          <span>
+            14
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.7
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Star Wars: Episode V - The Empire Strikes Back (1980)"
+          src="https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Star Wars: Episode V - The Empire Strikes Back
+        </h3>
+        <h4
+          id="15"
+        >
+          Rank
+          <span>
+            15
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.7
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Matrix (1999)"
+          src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Matrix
+        </h3>
+        <h4
+          id="16"
+        >
+          Rank
+          <span>
+            16
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.7
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Goodfellas (1990)"
+          src="https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Goodfellas
+        </h3>
+        <h4
+          id="17"
+        >
+          Rank
+          <span>
+            17
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.7
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="One Flew Over the Cuckoo's Nest (1975)"
+          src="https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          One Flew Over the Cuckoo's Nest
+        </h3>
+        <h4
+          id="18"
+        >
+          Rank
+          <span>
+            18
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Se7en (1995)"
+          src="https://m.media-amazon.com/images/M/MV5BOTUwODM5MTctZjczMi00OTk4LTg3NWUtNmVhMTAzNTNjYjcyXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Se7en
+        </h3>
+        <h4
+          id="19"
+        >
+          Rank
+          <span>
+            19
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Seven Samurai (1954)"
+          src="https://m.media-amazon.com/images/M/MV5BNWQ3OTM4ZGItMWEwZi00MjI5LWI3YzgtNTYwNWRkNmIzMGI5XkEyXkFqcGdeQXVyNDY2MTk1ODk@._V1_Ratio0.7015_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Seven Samurai
+        </h3>
+        <h4
+          id="20"
+        >
+          Rank
+          <span>
+            20
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="It's a Wonderful Life (1946)"
+          src="https://m.media-amazon.com/images/M/MV5BZjc4NDZhZWMtNGEzYS00ZWU2LThlM2ItNTA0YzQ0OTExMTE2XkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          It's a Wonderful Life
+        </h3>
+        <h4
+          id="21"
+        >
+          Rank
+          <span>
+            21
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Silence of the Lambs (1991)"
+          src="https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Silence of the Lambs
+        </h3>
+        <h4
+          id="22"
+        >
+          Rank
+          <span>
+            22
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="City of God (2002)"
+          src="https://m.media-amazon.com/images/M/MV5BOTMwYjc5ZmItYTFjZC00ZGQ3LTlkNTMtMjZiNTZlMWQzNzI5XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          City of God
+        </h3>
+        <h4
+          id="23"
+        >
+          Rank
+          <span>
+            23
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Saving Private Ryan (1998)"
+          src="https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Saving Private Ryan
+        </h3>
+        <h4
+          id="24"
+        >
+          Rank
+          <span>
+            24
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Life Is Beautiful (1997)"
+          src="https://m.media-amazon.com/images/M/MV5BYmJmM2Q4NmMtYThmNC00ZjRlLWEyZmItZTIwOTBlZDQ3NTQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Life Is Beautiful
+        </h3>
+        <h4
+          id="25"
+        >
+          Rank
+          <span>
+            25
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Interstellar (2014)"
+          src="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Interstellar
+        </h3>
+        <h4
+          id="26"
+        >
+          Rank
+          <span>
+            26
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Green Mile (1999)"
+          src="https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Green Mile
+        </h3>
+        <h4
+          id="27"
+        >
+          Rank
+          <span>
+            27
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.6
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Star Wars: Episode IV - A New Hope (1977)"
+          src="https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Star Wars: Episode IV - A New Hope
+        </h3>
+        <h4
+          id="28"
+        >
+          Rank
+          <span>
+            28
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Terminator 2: Judgment Day (1991)"
+          src="https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Terminator 2: Judgment Day
+        </h3>
+        <h4
+          id="29"
+        >
+          Rank
+          <span>
+            29
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Back to the Future (1985)"
+          src="https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Back to the Future
+        </h3>
+        <h4
+          id="30"
+        >
+          Rank
+          <span>
+            30
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Spirited Away (2001)"
+          src="https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Spirited Away
+        </h3>
+        <h4
+          id="31"
+        >
+          Rank
+          <span>
+            31
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Psycho (1960)"
+          src="https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Psycho
+        </h3>
+        <h4
+          id="32"
+        >
+          Rank
+          <span>
+            32
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Pianist (2002)"
+          src="https://m.media-amazon.com/images/M/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.7313_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Pianist
+        </h3>
+        <h4
+          id="33"
+        >
+          Rank
+          <span>
+            33
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Parasite (2019)"
+          src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Parasite
+        </h3>
+        <h4
+          id="34"
+        >
+          Rank
+          <span>
+            34
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Léon: The Professional (1994)"
+          src="https://m.media-amazon.com/images/M/MV5BOTgyMWQ0ZWUtN2Q2MS00NmY0LWI3OWMtNjFkMzZlNDZjNTk0XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Léon: The Professional
+        </h3>
+        <h4
+          id="35"
+        >
+          Rank
+          <span>
+            35
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Lion King (1994)"
+          src="https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Lion King
+        </h3>
+        <h4
+          id="36"
+        >
+          Rank
+          <span>
+            36
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="Gladiator (2000)"
+          src="https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          Gladiator
+        </h3>
+        <h4
+          id="37"
+        >
+          Rank
+          <span>
+            37
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="American History X (1998)"
+          src="https://m.media-amazon.com/images/M/MV5BZTJhN2FkYWEtMGI0My00YWM4LWI2MjAtM2UwNjY4MTI2ZTQyXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          American History X
+        </h3>
+        <h4
+          id="38"
+        >
+          Rank
+          <span>
+            38
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Departed (2006)"
+          src="https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Departed
+        </h3>
+        <h4
+          id="39"
+        >
+          Rank
+          <span>
+            39
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Usual Suspects (1995)"
+          src="https://m.media-amazon.com/images/M/MV5BYTViNjMyNmUtNDFkNC00ZDRlLThmMDUtZDU2YWE4NGI2ZjVmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Usual Suspects
+        </h3>
+        <h4
+          id="40"
+        >
+          Rank
+          <span>
+            40
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card-image"
+      >
+        <img
+          alt="The Prestige (2006)"
+          src="https://m.media-amazon.com/images/M/MV5BMjA4NDI0MTIxNF5BMl5BanBnXkFtZTYwNTM0MzY2._V1_Ratio0.6716_AL_.jpg"
+        />
+      </div>
+      <div
+        className="card-detail"
+      >
+        <h3
+          className="title"
+        >
+          The Prestige
+        </h3>
+        <h4
+          id="41"
+        >
+          Rank
+          <span>
+            41
+          </span>
+        </h4>
+        <ul
+          className="stat"
+        >
+          <li>
+            Rating
+            <span>
+               
+              8.5
+               
+            </span>
+          </li>
+          <li>
+            Vote Count
+            <span>
+               
+               
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
