@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Flip Movies: React-Redux Capstone] <a name="about-project"></a>
+# 📖 [Flip MovieStat Tracker: React-Redux Capstone] <a name="about-project"></a>
 
 > A web software that provides users with a small amount of statistical information about all movies. To conveniently obtain statistics on movies ranked by critic, user, and box-office, as well as to keep track of upcoming films
 
-**[Flip Movies]** is web application designed for entertainment to movie lovers which fetches live data from ImDb and show a metric(numeric) related information.
+**[Flip MovieStat Tracker]** is web application designed for entertainment to movie lovers which fetches live data from ImDb and show a metric(numeric) related information.
 
 ## 🛠 Built With <a name="built-with"></a>
 
