@@ -3,7 +3,17 @@ import { PropType } from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
 
-function Navbar({ home, setHome }) {
+function Navbar() {
+  // const [home, setHome] = useState(true);
+  // const home = useSelector((state) => state.movies.movies.parent);
+
+  const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(changeHome());
+  // }, [dispatch, home]);
+  const location = useLocation();
+  const { home } = location;
+  const navigate = useNavigate();
   return (
     <>
       { home ? (
